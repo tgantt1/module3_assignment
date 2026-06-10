@@ -30,7 +30,5 @@ def calculator():
 
         else:
             print(f"Unknown operation '{operation}'. Supported operations: add, subtract, multiply, divide.")
-            continue
-
-        print(f"Result: {result}")                
-        
+             
+        print(f"Result: {result}")
