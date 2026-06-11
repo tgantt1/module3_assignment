@@ -47,7 +47,7 @@ def test_subtraction(a: Number, b: Number, expected: Number) -> None:
     result = Operations().subtraction(a, b)
     assert result == expected, f"Expected subtraction({a}, {b}) to be {expected}, but got {result}"
 
-    @pytest.mark.parametrize(
+@pytest.mark.parametrize(
     "a, b, expected",
     [
         (2, 3, 6),           
@@ -57,7 +57,7 @@ def test_subtraction(a: Number, b: Number, expected: Number) -> None:
         (-2.5, 4.0, -10.0),  
     ],
     ids=[
-        "multiply_two_positive_integers" 
+        "multiply_two_positive_integers",
         "multiply_zero_with_positive_integer",
         "multiply_two_negative_integers",
         "multiply_two_positive_floats",
@@ -84,7 +84,7 @@ def test_multiplication(a: Number, b: Number, expected: Number) -> None:
         "divide_negative_float_by_positive_float",
         "divide_zero_by_positive_integer",
     ]
-)
+ )
 def test_division(a: Number, b: Number, expected: float) -> None:
      result = Operations.division(a, b)
      assert result == expected, f"Expected division({a}, {b}) to be {expected}, but got {result}"
