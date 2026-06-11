@@ -23,12 +23,13 @@ def calculator():
             result = Operations.multiplication(num1, num2)
         elif operation == "divide":
             try:
-                result == Operations.division(num1, num2)
+                result = Operations.division(num1, num2)
             except ValueError as e: 
                 print(e)
                 continue
 
         else:
             print(f"Unknown operation '{operation}'. Supported operations: add, subtract, multiply, divide.")
+            continue
              
         print(f"Result: {result}")
